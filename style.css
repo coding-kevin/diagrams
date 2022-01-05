@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+/* Main Nav */
+
+.main-nav {
+  display: flex;
+  margin-top: 0;
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f7bb4b;
+  text-decoration: none;
+}
+
+.nav-items {
+  display: flex;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.nav-items-main {
+  color: #14213d;
+  font-family: "Lato";
+}
+
+.nav-items > a {
+  text-decoration: none;
+  color: #14213d;
+  font-family: "Lato";
+  padding-right: 20px;
+}
+
+.navbar-name {
+  padding-left: 20px;
+}
+
+.navbar-name > a {
+  text-decoration: none;
+  color: #14213d;
+  font-family: "Lato";
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-nav,
+  .nav-items {
+    flex-direction: column;
+  }
+
+  .nav-items-main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .nav-items {
+    margin-left: 0;
+    display: none;
+    padding-right: 0;
+  }
+
+  .nav-items > a {
+    padding-right: 0px;
+  }
+
+  .hamburger-icon {
+    display: block;
+    justify-self: flex-end;
+    cursor: pointer;
+  }
+
+  .navbar-show {
+    display: flex;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+/* https://www.freecodecamp.org/news/how-to-build-a-responsive-navbar-with-a-toggle-menu-using-flexbox-3438e1d08783/ */
+
+/* END Main Nav */
+
+#bottom-nav {
+  position: relative;
+  height: auto;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  min-height: 3vh;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#bottom-nav a {
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #14213d;
+  font-size: 1.5em;
+  align-self: center;
+  margin-top: 90px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* END OF NAV */
+
+.instructions {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 55%;
+  max-width: 500px;
+  max-height: 430px;
+  top: 45px;
+  margin: auto;
+}
+
+.detailContainerArticle {
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  padding: 40px;
+}
+
+.detailContainerArticle button {
+  width: 100%;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  border-top: 1px solid #233a6c;
+  background-color: rgb(243, 243, 243);
+  font-size: 20px;
+  padding: 15px;
+  border-color: #233a6c;
+  font-family: "IBM Plex Sans", sans-serif;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #ffbe5c;
+}
+
+.info-panels {
+  margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.icon {
+  position: absolute;
+  max-width: 30px;
+}
+
+.flipObjectButton {
+  top: 94%;
+  left: 5%;
+  width: 100%;
+}
+
+.eye-con {
+  top: 94%;
+  left: 89%;
+  width: 100%;
+  padding-top: 2px;
+}
+
+@keyframes grow {
+  to {
+    width: 25%;
+    height: 3px;
+  }
+}
+
+#credit-card {
+  padding-bottom: 20px;
+}
+
+/* diagram text */
+
+.diagramTextAnimate {
+  animation: diagramAnimate 2s linear forwards;
+}
+
+@keyframes diagramAnimate {
+  0% {
+    opacity: 0;
+    height: 2px;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100vh;
+}
+
+.parent img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.front-page-gallery-item {
+  max-width: 60%;
+  justify-content: center;
+}

@@ -1,0 +1,170 @@
+/* lines general */
+
+.line {
+  width: 0;
+  position: absolute;
+  background-color: yellow;
+}
+
+.lineAnimate {
+  animation: grow 0.4s linear forwards;
+  border: 1px solid black;
+}
+
+/* text general */
+
+.diagramText {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  color: #14213d;
+  position: absolute;
+  visibility: hidden;
+}
+
+.diagramTextAnimate {
+  animation: diagramAnimate 1s linear forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes diagramAnimate {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* object 1 front */
+
+.airpods-line-1 {
+  top: 55%;
+  right: 83%;
+}
+
+.airpodsDiagramText-1 {
+  right: 110%;
+  top: 50%;
+}
+
+.airpods-line-2 {
+  top: 50%;
+  left: 55%;
+}
+
+.airpodsDiagramText-2 {
+  left: 90%;
+  top: 40%;
+}
+
+.airpods-line-3 {
+  top: 23%;
+  left: 72%;
+}
+
+.airpodsDiagramText-3 {
+  left: 99%;
+  top: 20%;
+}
+/*Object 1 back */
+
+.airpods-line-4 {
+  top: 55%;
+  left: 55%;
+}
+
+.airpodsDiagramText-4 {
+  top: 45%;
+  left: 85%;
+}
+
+/*Object 2 front */
+
+.object-2-line-1 {
+  top: 52%;
+  left: 75%;
+}
+
+.diagramText-1 {
+  left: 105%;
+  top: 28%;
+}
+
+/*object 2 back */
+
+.object-2-line-2 {
+  top: 20%;
+  left: 62%;
+}
+
+.diagramText-2 {
+  left: 90%;
+  top: 16%;
+}
+
+.object-2-line-3 {
+  top: 43%;
+  left: 78%;
+}
+
+.diagramText-3 {
+  left: 105%;
+  top: 35%;
+}
+
+.object-2-line-4 {
+  top: 72%;
+  right: 92%;
+}
+
+.diagramText-4 {
+  right: 118%;
+  top: 68%;
+}
+
+/*credit-card front */
+
+.credit-card-line-1 {
+  top: 40%;
+  right: 92%;
+  color: black;
+}
+
+.credit-card-diagramText-1 {
+  right: 120%;
+  top: 35%;
+  color: black;
+}
+
+.credit-card-line-2 {
+  top: 57%;
+  left: 92%;
+  color: black;
+}
+
+.credit-card-diagramText-2 {
+  left: 120%;
+  top: 40%;
+  color: black;
+}
+/*credit-card back */
+.credit-card-line-3 {
+  top: 23%;
+  left: 92%;
+  color: black;
+}
+
+.credit-card-diagramText-3 {
+  left: 120%;
+  top: 15%;
+  color: black;
+}
